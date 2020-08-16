@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% block title %} Login page {% endblock %}
+{% block login %}<center>
+{% with messages = get_flashed_messages() %}
+{% if messages %}<br>
+  {% for msg in messages %}
+  <p>{{msg}}</p>
+{% endfor %}
+  {% endif %}
+  {% endwith %}
+
+
+  <br><br><br>
+  <h2> Submit your Name below</h2>
+    <body style="background-color:#D2B4DE;">
+
+
+<div style="container">
+
+  <form action="#" method="POST"><p> Name :</p>
+        <p><input type="text" name="nm"></input><br></p>
+        <p><input type="submit" value="submit"></input></p>
+  </form>
+  </div>
+</body>
+  <center>
+    <br>
+    <br><br><br><br><br><br><br><br><br>
+
+{% endblock %}
